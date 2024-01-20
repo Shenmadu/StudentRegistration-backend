@@ -1,10 +1,12 @@
 package edu.icet.controller;
 
 
+import edu.icet.common.AuditTime;
 import edu.icet.dto.Response;
 import edu.icet.dto.Student;
 import edu.icet.entity.StudentEntity;
 import edu.icet.service.StudentService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -15,6 +17,7 @@ import java.util.Map;
 
 @CrossOrigin
 @RestController
+@Slf4j
 
 public class StudentController {
 
@@ -32,6 +35,7 @@ public class StudentController {
 
 
     @GetMapping("/student")
+    @AuditTime
     List<Student> getStudent() {
         return service.retriveStudent();
     }
