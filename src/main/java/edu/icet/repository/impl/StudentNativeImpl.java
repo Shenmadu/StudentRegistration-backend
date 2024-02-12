@@ -11,7 +11,7 @@ import java.util.HashMap;
 @Repository
 public class StudentNativeImpl implements StudentNativeRepository {
     @Autowired
-    NamedParameterJdbcTemplate namedParameterJdbcTemplate; //can be execute custom quiery
+    NamedParameterJdbcTemplate namedParameterJdbcTemplate;
     public boolean removeStudent(Long studentId){
         return namedParameterJdbcTemplate.update(
                 "DELETE FROM WHERE ID=:id",
@@ -19,15 +19,5 @@ public class StudentNativeImpl implements StudentNativeRepository {
 
 
     }
-    //if number of object have
-//    public void removeStudent(Long studentId){
-//        HashMap params=new HashMap<>();
-//        params.put("id",studentId);
-//
-//        namedParameterJdbcTemplate.update(
-//                "DELETE FROM WHERE ID=:id",params);
-//
-//
-//
-//    }
+
 }
