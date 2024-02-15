@@ -39,3 +39,7 @@ G.idea/sonarlint/issuestore/c/0/c03ac1f816c9916f472b08a3956b257b11194408,c\5\c5
 Q.idea/sonarlint/securityhotspotstore/a/5/a51a310824ac8e6a112b3505aa880748a2e11159,1\3\131ea3137e15237444a2f49c91749dfb706b5e30
 g
 7src/main/java/edu/icet/controller/CourseController.java,a\1\a135c6397a9448388015fc331ab647703ac5c14e
+]
+-src/main/java/edu/icet/config/BeanConfig.java,1\2\124df90ec09125e9a40843509b1fa4288f9cf162
+d
+4src/main/java/edu/icet/dto/responce/DogResponce.java,5\8\586d4b776f829ae4df436d7391043b35bcbf5aa0
